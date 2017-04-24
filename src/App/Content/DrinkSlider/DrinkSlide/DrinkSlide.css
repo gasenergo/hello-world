@@ -1,0 +1,40 @@
+.drink-card {
+  width: 250px;
+  height: 50vh;
+  background-color: white;
+  font-family: raleway;
+  margin: 0 auto; }
+  .drink-card img {
+    height: 50%;
+    width: auto;
+    margin: 50px 50%;
+    transform: translateX(-50%); }
+  .drink-card .name {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    width: 80%;
+    border-bottom: 2px solid #94774a;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center; }
+  .drink-card .price {
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; }
+  .drink-card .choose {
+    width: 250px;
+    height: 45px;
+    box-sizing: border-box;
+    background: #94774a;
+    font-size: 16px;
+    color: white;
+    font-family: RobotoCondensed;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: bold;
+    bottom: 0; }
