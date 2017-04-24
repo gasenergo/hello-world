@@ -1,0 +1,29 @@
+.logo {
+  width: 170px;
+  position: relative;
+  font-family: nautilus;
+  font-size: 25px; }
+  .logo img {
+    position: absolute;
+    left: 10px;
+    top: 37px;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: #94774a;
+    border-radius: 50px;
+    transform: rotate(12deg);
+    box-sizing: border-box;
+    border: 5px solid #94774a; }
+  .logo p {
+    position: absolute;
+    color: #94774a;
+    left: 75px;
+    top: 5px;
+    transform: rotate(-7deg); }
+    .logo p span {
+      color: white;
+      margin-top: 0;
+      position: absolute;
+      left: -10px;
+      top: 20px; }
