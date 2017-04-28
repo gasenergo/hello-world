@@ -1,0 +1,70 @@
+$main: #94774a
+
+.logo
+		width: 170px
+		height: 100px
+		position: relative
+		font-family: nautilus
+		font-size: 25px
+		a
+			display: block
+			width: 180px
+			height: 100px
+
+		img
+			position: absolute
+			left: 10px
+			top: 37px
+			bottom: 30px
+			height: 50px
+			width: 50px
+			background-color: $main
+			border-radius: 50px
+			transform: rotate(12deg)
+			box-sizing: border-box
+			border: 5px solid $main
+		p
+			position: absolute
+			color: $main
+			left: 75px
+			top: 5px
+			transform: rotate(-7deg)
+			span
+				color: white
+				margin-top: 0
+				position: absolute
+				left: -10px
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.logo
+		transform: scale(0.7)
+		img
+			top: 23px
+		p
+			top: -10px
+	/**/

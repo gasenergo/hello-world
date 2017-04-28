@@ -1,0 +1,235 @@
+/*==========  Mobile View  ==========*/
+.menu {
+  height: 70vh;
+  overflow: auto; }
+
+/*==========  Desctop View  ==========*/
+.card {
+  height: 65vh;
+  width: 295px;
+  box-sizing: border-box;
+  background-color: white;
+  margin: auto; }
+  .card .picture {
+    height: 300px;
+    width: 100%;
+    margin: 9px auto 10px;
+    background-image: url("./../../img/flour.jpg"); }
+    .card .picture img {
+      width: 70%;
+      height: auto;
+      margin: 6% 15%; }
+  .card .small {
+    position: absolute;
+    left: 80px;
+    top: 255px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 6px solid #94774a;
+    background: black;
+    font-size: 20px;
+    color: white;
+    font-family: RobotoCondensed;
+    font-weight: bold; }
+    .card .small:disabled {
+      background: #3f3320; }
+  .card .big {
+    position: absolute;
+    left: 140px;
+    top: 250px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 6px solid #94774a;
+    background: black;
+    font-size: 20px;
+    color: white;
+    font-family: RobotoCondensed;
+    font-weight: bold; }
+    .card .big:disabled {
+      background: #3f3320; }
+  .card .price {
+    position: absolute;
+    left: 220px;
+    top: 255px;
+    color: white;
+    font-family: RobotoCondensed;
+    font-weight: bold;
+    font-size: 24px;
+    height: 45px;
+    width: 140px;
+    background-color: #94774a;
+    line-height: 45px;
+    text-align: center; }
+  .card .name {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    width: 80%;
+    border-bottom: 2px solid #94774a;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase; }
+  .card .consist, .card .description {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    font-family: Raleway;
+    font-size: 14px; }
+    .card .consist span, .card .description span {
+      font-weight: bold; }
+  .card .choose {
+    width: 295px;
+    height: 45px;
+    box-sizing: border-box;
+    background: #94774a;
+    font-size: 16px;
+    color: white;
+    font-family: RobotoCondensed;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .card .small {
+    left: 50px; }
+  .card .big {
+    left: 110px; }
+  .card .price {
+    left: 200px;
+    width: 120px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .card {
+    width: 225px;
+    height: 63vh; }
+    .card .picture {
+      height: 250px; }
+    .card .small {
+      left: 20px;
+      top: 200px; }
+    .card .big {
+      left: 70px;
+      top: 195px; }
+    .card .price {
+      left: 145px;
+      top: 200px;
+      font-size: 22px;
+      height: 45px;
+      width: 100px; }
+    .card .consist, .card .description {
+      padding-top: 5px; }
+    .card .choose {
+      width: 225px;
+      height: 40px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 80%;
+    height: 40vw;
+    margin: 1% auto;
+    position: relative;
+    border-top: 1px solid white; }
+    .card .picture {
+      height: 90%;
+      width: 30vw;
+      float: left;
+      margin: 2%; }
+      .card .picture img {
+        width: 70%;
+        height: auto;
+        margin: 10% 15%; }
+    .card .small {
+      position: absolute;
+      left: 3vw;
+      top: 30vw; }
+    .card .big {
+      position: absolute;
+      left: 10vw;
+      top: 29vw; }
+    .card .price {
+      position: absolute;
+      left: 32vw;
+      top: 25vw;
+      color: #94774a;
+      background-color: transparent; }
+    .card .name {
+      font-size: 16px;
+      white-space: nowrap;
+      margin-top: 10px;
+      border-bottom: none; }
+    .card .description {
+      display: none; }
+    .card .consist {
+      font-size: 14px;
+      padding-top: 1%; }
+    .card .choose {
+      width: 54%;
+      height: 45px;
+      font-size: 14px;
+      color: white;
+      bottom: 5px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  .card {
+    width: 100%;
+    height: 50vw; }
+    .card .picture {
+      height: 90%;
+      width: 35vw; }
+    .card .small {
+      transform: scale(0.8);
+      left: 3vw;
+      top: 30vw; }
+    .card .big {
+      transform: scale(0.8);
+      position: absolute;
+      left: 13vw;
+      top: 29vw; }
+    .card .price {
+      left: 36vw;
+      top: 27vw;
+      color: #94774a;
+      background-color: transparent; }
+    .card .name {
+      font-size: 15px;
+      margin-top: 5px; }
+    .card .consist {
+      font-size: 13px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .card .small {
+    left: 3vw;
+    top: 31vw; }
+  .card .big {
+    transform: scale(0.8);
+    position: absolute;
+    left: 15vw;
+    top: 29vw; }
+  .card .price {
+    transform: scale(0.8);
+    left: 36vw;
+    top: 30vw;
+    color: #94774a;
+    background-color: transparent; }
+  .card .name {
+    font-size: 14px;
+    margin-top: 2px; }
+  .card .consist {
+    font-size: 12px; }
+  .card .choose {
+    width: 54%;
+    height: 25px;
+    font-size: 12px;
+    bottom: 2px; }
+  /**/ }

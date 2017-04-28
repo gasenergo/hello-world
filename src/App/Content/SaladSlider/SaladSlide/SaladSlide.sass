@@ -1,0 +1,198 @@
+$main: #94774a
+/*==========  Mobile View  ==========*/
+.menu
+  height: 70vh
+  overflow: auto
+
+/*==========  Desctop View  ==========*/
+.salad-card
+  width: 250px
+  height: 50vh
+  background-color: white
+  font-family: raleway
+  margin: 0 auto
+  .picture
+    img
+      height: auto
+      width: 100%
+  .price
+    position: absolute
+    height: 60px
+    width: 60px
+    border-radius: 50%
+    background-color: $main
+    transform: translate(158%,-50%)
+    padding-top: 15px
+    font-family: RobotoCondensed
+    font-size: 14px
+    color: white
+    line-height: 15px
+    text-align: center
+
+  .name
+    font-family: Raleway
+    font-weight: 800
+    font-size: 18px
+    width: 80%
+    border-bottom: 2px solid $main
+    text-align: center
+    margin: 0 auto
+    text-transform: uppercase
+    text-align: center
+    margin-top: 35px
+  .consist
+    width: 90%
+    margin: 0 auto
+    padding-top: 15px
+    font-family: Raleway
+    font-size: 14px
+    text-align: left
+    span
+      font-weight: bold
+  .choose
+    width: 250px
+    height: 45px
+    box-sizing: border-box
+    background: $main
+    font-size: 16px
+    color: white
+    font-family: RobotoCondensed
+    font-weight: bold
+    text-transform: uppercase
+    position: absolute
+    font-weight: bold
+    bottom: 0
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .salad-card
+    width: 235px
+    .choose
+      width: 235px
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .salad-card
+    width: 180px
+    height: 45vh
+    .price
+
+      transform: translate(100%,-50%)
+
+
+
+    .consist
+      width: 95%
+
+    .choose
+      width: 180px
+      height: 45px
+      box-sizing: border-box
+      background: $main
+      font-size: 16px
+      color: white
+      font-family: RobotoCondensed
+      font-weight: bold
+      text-transform: uppercase
+      position: absolute
+      font-weight: bold
+      bottom: 0
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	.salad-card
+    width: 80%
+    height: 40vw
+    margin: 1% auto
+    position: relative
+    overflow: auto
+    .picture
+      height: 100%
+      width: 30vw
+      float: left
+      overflow: hidden
+      img
+      	width: auto
+      	height: 100%
+    .price
+      position: absolute
+      left: 3vw
+      top: 30vw
+      transform: translate(0,0)
+    .text
+      margin-left: 30vw
+      .name
+        font-size: 16px
+        white-space: nowrap
+        margin-top: 10px
+        border-bottom: none
+      .description
+        display: none
+      .consist
+        width: 90%
+        margin: 0 auto
+        padding-top: 1%
+      .choose
+        width: 55%
+        height: 45px
+        font-size: 14px
+        color: white
+        bottom: 5px
+        right: 15px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+  .salad-card
+    width: 100%
+    height: 50vw
+    .picture
+      height: 100%
+      width: 35vw
+    .price
+      left: 3vw
+      top: 32vw
+    .text
+      margin-left: 35vw
+      .name
+        font-size: 15px
+        margin-top: 7px
+      .description
+        display: none
+      .consist
+        font-size: 13px
+        padding-top: 1%
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  .salad-card
+    .picture
+    .price
+      left: 2vw
+      top: 30vw
+      height: 50px
+      width: 50px
+      font-size: 13px
+      line-height: 13px
+    .text
+      .name
+        font-size: 14px
+        margin-top: 3px
+      .description
+        display: none
+      .consist
+        font-size: 12px
+      .choose
+        width: 55%
+        height: 25px
+        font-size: 14px
+        bottom: 3px
+        right: 10px

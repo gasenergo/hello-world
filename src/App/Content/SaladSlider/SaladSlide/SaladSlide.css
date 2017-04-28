@@ -1,0 +1,179 @@
+/*==========  Mobile View  ==========*/
+.menu {
+  height: 70vh;
+  overflow: auto; }
+
+/*==========  Desctop View  ==========*/
+.salad-card {
+  width: 250px;
+  height: 50vh;
+  background-color: white;
+  font-family: raleway;
+  margin: 0 auto; }
+  .salad-card .picture img {
+    height: auto;
+    width: 100%; }
+  .salad-card .price {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #94774a;
+    transform: translate(158%, -50%);
+    padding-top: 15px;
+    font-family: RobotoCondensed;
+    font-size: 14px;
+    color: white;
+    line-height: 15px;
+    text-align: center; }
+  .salad-card .name {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    width: 80%;
+    border-bottom: 2px solid #94774a;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 35px; }
+  .salad-card .consist {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    font-family: Raleway;
+    font-size: 14px;
+    text-align: left; }
+    .salad-card .consist span {
+      font-weight: bold; }
+  .salad-card .choose {
+    width: 250px;
+    height: 45px;
+    box-sizing: border-box;
+    background: #94774a;
+    font-size: 16px;
+    color: white;
+    font-family: RobotoCondensed;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: bold;
+    bottom: 0; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .salad-card {
+    width: 235px; }
+    .salad-card .choose {
+      width: 235px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .salad-card {
+    width: 180px;
+    height: 45vh; }
+    .salad-card .price {
+      transform: translate(100%, -50%); }
+    .salad-card .consist {
+      width: 95%; }
+    .salad-card .choose {
+      width: 180px;
+      height: 45px;
+      box-sizing: border-box;
+      background: #94774a;
+      font-size: 16px;
+      color: white;
+      font-family: RobotoCondensed;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: absolute;
+      font-weight: bold;
+      bottom: 0; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .salad-card {
+    width: 80%;
+    height: 40vw;
+    margin: 1% auto;
+    position: relative;
+    overflow: auto; }
+    .salad-card .picture {
+      height: 100%;
+      width: 30vw;
+      float: left;
+      overflow: hidden; }
+      .salad-card .picture img {
+        width: auto;
+        height: 100%; }
+    .salad-card .price {
+      position: absolute;
+      left: 3vw;
+      top: 30vw;
+      transform: translate(0, 0); }
+    .salad-card .text {
+      margin-left: 30vw; }
+      .salad-card .text .name {
+        font-size: 16px;
+        white-space: nowrap;
+        margin-top: 10px;
+        border-bottom: none; }
+      .salad-card .text .description {
+        display: none; }
+      .salad-card .text .consist {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1%; }
+      .salad-card .text .choose {
+        width: 55%;
+        height: 45px;
+        font-size: 14px;
+        color: white;
+        bottom: 5px;
+        right: 15px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  .salad-card {
+    width: 100%;
+    height: 50vw; }
+    .salad-card .picture {
+      height: 100%;
+      width: 35vw; }
+    .salad-card .price {
+      left: 3vw;
+      top: 32vw; }
+    .salad-card .text {
+      margin-left: 35vw; }
+      .salad-card .text .name {
+        font-size: 15px;
+        margin-top: 7px; }
+      .salad-card .text .description {
+        display: none; }
+      .salad-card .text .consist {
+        font-size: 13px;
+        padding-top: 1%; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .salad-card .price {
+    left: 2vw;
+    top: 30vw;
+    height: 50px;
+    width: 50px;
+    font-size: 13px;
+    line-height: 13px; }
+  .salad-card .text .name {
+    font-size: 14px;
+    margin-top: 3px; }
+  .salad-card .text .description {
+    display: none; }
+  .salad-card .text .consist {
+    font-size: 12px; }
+  .salad-card .text .choose {
+    width: 55%;
+    height: 25px;
+    font-size: 14px;
+    bottom: 3px;
+    right: 10px; } }

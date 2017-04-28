@@ -1,0 +1,113 @@
+/*==========  Mobile View  ==========*/
+.menu {
+  height: 70vh;
+  overflow: auto; }
+
+/*==========  Desktop View  ==========*/
+.drink-card {
+  width: 250px;
+  height: 50vh;
+  background-color: white;
+  font-family: raleway;
+  margin: 0 auto; }
+  .drink-card .picture {
+    height: 300px;
+    width: 100%;
+    text-align: center; }
+    .drink-card .picture img {
+      width: auto;
+      height: 70%;
+      margin: 15%; }
+  .drink-card .name {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 18px;
+    width: 80%;
+    border-bottom: 2px solid #94774a;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center; }
+  .drink-card .price {
+    font-family: RobotoCondensed;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; }
+  .drink-card .choose {
+    width: 250px;
+    height: 45px;
+    box-sizing: border-box;
+    background: #94774a;
+    font-size: 16px;
+    color: white;
+    font-family: RobotoCondensed;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    font-weight: bold;
+    bottom: 0; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .drink-card {
+    width: 220px; }
+    .drink-card .picture {
+      height: 270px;
+      width: 100%;
+      text-align: center; }
+    .drink-card .choose {
+      width: 220px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .drink-card {
+    width: 80vw;
+    height: 40vw;
+    margin: 1% auto;
+    position: relative;
+    overflow: auto; }
+    .drink-card .picture {
+      height: 100%;
+      width: 30vw;
+      float: left; }
+      .drink-card .picture img {
+        width: auto;
+        height: 80%; }
+    .drink-card .text .price {
+      position: absolute;
+      left: 35vw;
+      top: 25vw;
+      color: #94774a;
+      font-size: 24px; }
+    .drink-card .text .name {
+      margin-top: 20px;
+      border-bottom: none; }
+    .drink-card .text .choose {
+      width: 55%;
+      height: 45px;
+      font-size: 14px;
+      color: white;
+      bottom: 5px;
+      right: 15px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  .drink-card {
+    width: 90vw;
+    height: 50vw; }
+    .drink-card .text .price {
+      left: 38vw;
+      top: 25vw; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .drink-card .text .price {
+    left: 38vw;
+    top: 18vw; } }

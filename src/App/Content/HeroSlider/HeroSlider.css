@@ -1,0 +1,51 @@
+.item {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .item .text {
+    width: 85%;
+    height: 100%;
+    color: white;
+    margin: 0 auto; }
+    .item .text .name {
+      font-family: isadora;
+      font-size: 52px;
+      line-height: 55px;
+      margin: 0; }
+    .item .text .desc {
+      font-family: raleway;
+      font-size: 16px; }
+  .item .pict {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .item .pict img {
+      width: 90%;
+      height: auto;
+      margin: 0 auto; }
+
+.mobile-menu {
+  width: 100vw; }
+  .mobile-menu nav .mobile-link {
+    display: block;
+    height: 15vh;
+    line-height: 15vh;
+    background-size: cover;
+    background-position: center; }
+    .mobile-menu nav .mobile-link a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      font-size: 20px;
+      font-family: raleway;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: white;
+      z-index: -1; }
+      .mobile-menu nav .mobile-link a:hover {
+        text-decoration: none;
+        color: #94774a; }
