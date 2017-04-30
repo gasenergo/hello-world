@@ -65,13 +65,13 @@ const salads = [
     image:require('./img/bright.jpg'),
     price:65,
     size:100,
-    consist:"говядина односортная, помидоры, перец болгарский, опята маринованные, капуста белокочаная, лук репчатый жаренный, перец черный молотый, соль, масло растительное "},
+    consist:"говядина односортная, помидоры, перец болгарский, опята маринованные, капуста белокочаная, лук репчатый жаренный, перец черный молотый, соль"},
   {id:2,
     name: "Салат немецкий",
     image:require('./img/german.jpg'),
     price:45,
     size:100,
-    consist:"огурцы маринованные, картофель, сельдь м/с филе, яблоко, лук красный, горчица, укроп свежий, соль, сахар, масло растительное "},
+    consist:"огурцы маринованные, картофель, сельдь м/с филе, яблоко, лук красный, горчица, укроп свежий, соль, сахар, масло растительное"},
   {id:3,
     name: "Салат богатырь",
     image:require('./img/godpower.jpg'),
@@ -148,14 +148,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      order: [{'id':12, 'price':200}]
+      order: []
     }
     this.onAdd = this.onAdd.bind(this)
     this.onDelete = this.onDelete.bind(this)
+    this.onReset = this.onReset.bind(this)
   };
   onAdd(id,price){
     this.setState({
-      order: this.state.order.concat({'id':id,'price':price})
+      order: this.state.order.concat({id:id,price:price})
     })
   };
   onDelete(index){
@@ -163,8 +164,13 @@ class App extends Component {
       order: this.state.order.filter((_, i) => i !== index)
     })
   };
-
+  onReset(){
+    this.setState({
+      order: []
+    })
+  };
   render() {
+    let total = this.state.order.reduce((prev, curr) => ({price: prev.price + curr.price}),{price:0});
     return (
 		<Router>
 			<div className="App">
@@ -173,7 +179,7 @@ class App extends Component {
 				<Route exact path="/pizza" component={() => (<PizzaSlider items={pizzas} onAdd={this.onAdd} />)} />
         <Route exact path="/salad" component={() => (<SaladSlider items={salads} onAdd={this.onAdd} />)} />
         <Route exact path="/drink" component={() => (<DrinkSlider items={drinks} onAdd={this.onAdd} />)} />
-				<Route exact path="/order" component={() => (<Order order={this.state.order} onDelete={this.onDelete} />)} />
+				<Route exact path="/order" component={() => (<Order order={this.state.order} total={total} onDelete={this.onDelete} onReset={this.onReset} />)} />
 				<Footer />
 			</div>
 		</Router>

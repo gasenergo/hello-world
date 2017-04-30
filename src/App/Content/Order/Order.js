@@ -39,8 +39,8 @@ class Order extends Component {
                   </tbody>
                 </table>
               </div>
-              <div className="price-sum">Итого: <span>22500 руб.</span></div>
-              <button className="reset"><i className="fa fa-times" aria-hidden="true"></i> Сбросить</button>
+              <div className="price-sum">Итого: <span>{this.props.total.price} руб.</span></div>
+              <button className="reset" onClick={()=>{this.props.onReset()}}><i className="fa fa-times" aria-hidden="true"></i> Сбросить</button>
               <button type="submit "><i className="fa fa-check" aria-hidden="true"></i> Оформить</button>
 						</div>
 					</div>

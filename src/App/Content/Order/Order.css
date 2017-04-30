@@ -3,7 +3,7 @@
   margin: 20px auto; }
 
 form.user {
-  height: 65vh;
+  height: 67vh;
   width: 90%;
   margin: 20px;
   border: 2px solid black;
@@ -44,13 +44,23 @@ form.user label textarea:focus {
 .bill {
   background-image: url("../../img/flour.jpg");
   color: white;
-  height: 65vh;
+  height: 67vh;
   width: 90%;
   margin: 20px;
   outline: 2px solid white;
   outline-offset: -32px;
   padding: 30px;
   text-align: center; }
+
+.bill p {
+  font-size: 30px;
+  font-family: raleway;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white; }
+
+.bill span {
+  color: #94774a; }
 
 .bill .scroll {
   overflow-y: auto;
@@ -79,7 +89,8 @@ form.user label textarea:focus {
   background-color: red;
   color: white;
   border: 1px solid #94774a;
-  border-radius: 50%; }
+  border-radius: 50%;
+  line-height: 23px; }
 
 .bill .price-sum {
   font-size: 25px;
