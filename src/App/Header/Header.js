@@ -36,6 +36,7 @@ class Header extends Component {
             <Logo />
             <Phone />
             <Nav items={menu}/>
+            <div className="cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></div>
           </div>
         </div>
       </header>

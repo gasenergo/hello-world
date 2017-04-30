@@ -9,3 +9,51 @@ header
 		height: 120px
 		width: 100%
 		background-color: rgba(0,0,0,0.4)
+.cart
+	height: 50px
+	width: 50px
+	background-color: coral
+	border-radius: 50%
+	text-align: center
+	line-height: 50px
+	color: white
+	font-size: 18px
+	position: absolute
+	right: 5%
+	top: 40px
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+	header
+		height: 180px
+		&::before
+			height: 180px
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	header
+		height: 120px
+		&::before
+			height: 120px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+	header
+		height: 90px
+		&::before
+			height: 90px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/

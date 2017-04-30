@@ -1,95 +1,125 @@
 $main: #94774a
+.form-description
+	width: 85%
+	margin: 20px auto
 
-.top_title
-	text-align: center
-	color: white
-	span
-		font-size: 18px
-		font-family: raleway
-		font-weight: bold
-		text-transform: uppercase
-	p
-		font-size: 16px
-		font-family: raleway
-		margin-bottom: 20px
 form.user
-	span
-		font-size: 20px
-		font-family: raleway
-		font-weight: bold
-		text-transform: uppercase
-
+	height: 65vh
+	width: 90%
+	margin: 20px
+	border: 2px solid black
+	background-color: white
 	p
 		font-size: 18px
 		font-family: raleway
-
 	label
+		margin: 0 5%
 		font-size: 12px
 		font-family: raleway
+		input
+			width: 90%
+			height: 50px
+			margin: 0 5% 10px
+			text-align: center
+			font-size: 30px
+			font-family: robotocondenced
+			&:focus
+				border: 2px solid $main
+				outline: none
+				box-shadow: none
+		textarea
+			width: 90%
+			height: 200px
+			margin: 1% 5%
+			&:focus
+				border: 2px solid $main
+				outline: none
+				box-shadow: none
 
-	input
-		width: 100%
-		height: 50px
-		margin-bottom: 10px
-		text-align: center
-		font-size: 30px
-		font-family: robotocondenced
-		&:focus
-			border: 2px solid $main
-			outline: none
-			box-shadow: none
-
-	textarea
-		width: 100%
-		&:focus
-			border: 2px solid $main
-			outline: none
-			box-shadow: none
 .bill
-	height: 550px
-	width: 100%
 	background-image: url("../../img/flour.jpg")
-	background-size: cover
-	text-align: center
+	color: white
+	height: 65vh
+	width: 90%
+
+	margin: 20px
 	outline: 2px solid white
-	outline-offset: -20px
-	padding-top: 50px
-
-
-	p
-		font-size: 30px
+	outline-offset: -32px
+	padding: 30px
+	text-align: center
+	.scroll
+		overflow-y: auto
+		height: 65%
+		table
+			width: 90%
+			font-size: 18px
+			font-family: raleway
+			color: white
+			margin: auto
+			text-align: left
+			border-collapse: separate
+	  	border-spacing: 5px
+			td:nth-child(2)
+				text-align: left
+			td
+	  		text-align: center
+	.delete
+		font-size: 10px
+		height: 25px
+		width: 25px
+		background-color: red
+		color: white
+		border: 1px solid $main
+		border-radius: 50%
+	.price-sum
+		font-size: 25px
 		font-family: raleway
 		font-weight: bold
 		text-transform: uppercase
 		color: white
-	span
-		color: $main
-	.scroll
-		overflow: auto
-		height: 250px
-		width: 90%
-		margin: auto
-	.order
-		font-size: 18px
-		font-family: raleway
-		color: white
-		margin: auto
-		border-top: 2px solid white
-		text-align: left
-		border-collapse: separate
-  	border-spacing: 5px
-		td
-  		padding: 5px;
+		span
+			color: $main
+			text-transform:none
 
-	#price-sum
-		width: 80%
-		text-align: center
-		margin: auto
 	button
-		font-size: 18px
+		font-size: 16px
 		height: 50px
 		text-transform: uppercase
 		background-color: $main
 		color: white
-		font-weight: bold
-		margin: 0 10px
+		margin: 10px
+		&.reset
+			height: 30px
+			background-color: transparent
+			border: none
+			border-bottom: 1px solid white
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  /**/
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  form.user, .bill
+		width: 80%
+		margin: 10px auto
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	form.user, .bill
+		width: 90%
+		margin: 10px auto
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+	form.user, .bill
+		outline: none
+		width: 100%
+		height: auto
+		margin: 10px auto
+		button
+			height: 30px
+			font-size: 12px
+			margin: 5px
+  /**/
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/
